@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import Index from "./views/";
+import Container from '@material-ui/core/Container';
+/* 
+  This form is build using Formik
+  - https://jaredpalmer.com/formik/docs/overview
+  Yup for handling validations
+  - https://github.com/jquense/yup
+  And used Material Ui for developing the UI 
+  - https://material-ui.com/ v4.9.3
+*/
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="md">
+      <Index />
+    </Container>
   );
 }
 
