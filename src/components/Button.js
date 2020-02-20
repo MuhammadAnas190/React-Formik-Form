@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(theme => ({
   root: {
+    width: "100%",
     '& > *': {
       margin: theme.spacing(1),
     },
@@ -13,9 +14,7 @@ const useStyles = makeStyles(theme => ({
 const ButtonWrapper = props => {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
-      <Button {...props}/>
-    </div>
+    <Button className={classes.root} {...props}/>
   );
 }
 export default ButtonWrapper;
